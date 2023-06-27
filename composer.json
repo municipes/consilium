@@ -115,7 +115,6 @@
     "drupal/webform": "^6.2@beta",
     "oomphinc/composer-installers-extender": "^2.0",
     "municipes/facies": "^1.0",
-    "municipes/facies-dist": "*",
     "recurser/jquery-simple-color": "*"
   },
   "require-dev": {
