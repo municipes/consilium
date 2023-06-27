@@ -1,0 +1,147 @@
+{
+  "name": "municipes/consilium",
+  "description": "Diagraphè è un modello che installa la distribuzione Drupal Ouitoulìa",
+  "type": "project",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Maurizio Cavalletti",
+      "homepage": "https://www.drupal.org/u/maurizio_akabit",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Pietro Arturo Panetta",
+      "email": "arturu@arturu.it",
+      "homepage": "https://www.drupal.org/u/arturopanetta",
+      "role": "Maintainer"
+    }
+  ],
+  "homepage": "https://github.com/municipes/consilium",
+  "support": {
+    "docs": "https://github.com/municipes/consilium#readme",
+    "issues": "https://github.com/municipes/consilium/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "municipes/facies-dist",
+        "version": "1.0.41",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "municipes-facies"
+        },
+        "dist": {
+          "url": "https://github.com/municipes/facies/releases/download/1.0.41/facies.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "recurser/jquery-simple-color",
+        "version": "1.2.3",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery-simple-color"
+        },
+        "dist": {
+          "url": "https://github.com/recurser/jquery-simple-color/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "bgrins/spectrum",
+        "version": "1.8.0",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "spectrum"
+        },
+        "dist": {
+          "url": "https://github.com/bgrins/spectrum/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "bgrins/spectrum": "*",
+    "drupal/recommended-project": "^10.1",
+    "drupal/admin_toolbar": "^3.3",
+    "drupal/address": "^1.12",
+    "drupal/color_field": "^3.0",
+    "drupal/entity_reference_display": "^2.0",
+    "drupal/field_group": "^3.4",
+    "drupal/focal_point": "^2.0",
+    "drupal/geofield": "^1.53",
+    "drupal/imce": "^3.0",
+    "drupal/leaflet": "^10.0",
+    "drupal/paragraphs": "^1.15",
+    "drupal/pathauto": "^1.11",
+    "drupal/office_hours": "^1.11",
+    "drupal/term_reference_tree": "^2.0",
+    "oomphinc/composer-installers-extender": "^2.0",
+    "municipes/facies": "^1.0",
+    "municipes/facies-dist": "*",
+    "recurser/jquery-simple-color": "*"
+  },
+  "require-dev": {
+    "drupal/core-dev": "^10.1"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true,
+      "phpstan/extension-installer": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "oomphinc/composer-installers-extender": true
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+    },
+    "drupal-core-project-message": {
+      "include-keys": ["homepage","support"],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>  Congratulazioni, hai installato la codebase Ouitoulìa  </>",
+        "<bg=blue;fg=white>  partendo dal modello municipes/consilium               </>",
+        "<bg=blue;fg=white>                                                         </>",
+        "",
+        "<bg=yellow;fg=black>Prossimi passi</>:",
+        "  * Installa il sito: https://www.drupal.org/docs/user_guide/en/install-run.html",
+        "  * Leggi la guida utente: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Per ricevere supporto: https://github.com/municipes/consilium/issues"
+      ]
+    }
+  }
+}
