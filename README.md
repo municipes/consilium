@@ -11,6 +11,7 @@ Per installare il CMS Municipes procedi così
 1) Installa il codice:
 ```shell
 $ composer create municipes/consilium project-name --no-install
+$ cd project-name
 $ composer require drush/drush --no-install
 $ composer install
 ```
