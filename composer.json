@@ -75,7 +75,7 @@
   ],
   "require": {
     "bgrins/spectrum": "*",
-    "drupal/recommended-project": "^10.1",
+    "drupal/recommended-project": "^10.0",
     "drupal/address": "^1.12",
     "drupal/admin_toolbar": "^3.4",
     "drupal/auto_entitylabel": "^3.0",
