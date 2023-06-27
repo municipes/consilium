@@ -23,7 +23,7 @@ echo "-- Attivo il tema di amministrazione -----------------------------------"
 drush -y theme:enable claro
 drush -y config:set system.theme admin claro
 drush -y config:set node.settings use_admin_theme 1
-drush -y pm:install toolbar admin_toolbar admin_toolbar_tools
+drush -y pm:install toolbar admin_toolbar admin_toolbar_tools contextual
 
 echo "-- Solo gli amministratori possono registrare nuovi utenti -------------"
 drush -y config:set user.settings register admin_only
@@ -36,8 +36,8 @@ drush -y pm:install big_pipe datetime file field image inline_form_errors \
   media media_library node options responsive_image taxonomy telephone \
   text views
 
-drush -y pm:install address entity_reference_revisions geofield imce \
-  field_group focal_point leaflet office_hours paragraphs term_reference_tree
+drush -y pm:install address auto_entitylabel entity_reference_revisions geofield imce \
+  field_group focal_point leaflet paragraphs
 
 echo "-- Installo il tema ----------------------------------------------------"
 drush -y pm:enable components
