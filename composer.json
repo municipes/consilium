@@ -114,7 +114,7 @@
     "drupal/viewsreference": "^2.0@beta",
     "drupal/webform": "^6.2@beta",
     "oomphinc/composer-installers-extender": "^2.0",
-    "municipes/facies": "^1.0",
+    "municipes/scaenographia": "^1.0",
     "recurser/jquery-simple-color": "*"
   },
   "require-dev": {
