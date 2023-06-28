@@ -3,22 +3,22 @@
 # This script performs the initial configuration of Municipes.
 # Run this script in the location where your composer.json is.
 
-# echo "-- Installo i vocabolari -----------------------------------------------"
-# composer require municipes/lexika --no-cache
-# drush -y en lexika
+echo "-- Installo i vocabolari -----------------------------------------------"
+composer require municipes/lexicum --no-cache
+drush -y en lexicum
 
-# echo "-- Importo le voci di tassonomia ---------------------------------------"
-# composer require municipes/sunchronizo_lexika --no-cache
-# drush -y en sunchronizo_lexika
-# drush migrate:import --all
+echo "-- Importo le voci di tassonomia ---------------------------------------"
+composer require municipes/lexicum_collatio --no-cache
+drush -y en lexicum_collatio
+drush migrate:import --all
 
-# echo "-- Installo i tipi di Media gestiti ------------------------------------"
-# composer require municipes/bibliotheke --no-cache
-# drush -y pm:install bibliotheke
+echo "-- Installo i tipi di Media gestiti ------------------------------------"
+composer require municipes/bibliotheca --no-cache
+drush -y pm:install bibliotheca
 
-# echo "-- Installo i campi usati dalle entità Node ----------------------------"
-# composer require municipes/themethla --no-cache
-# drush -y pm:install themethla
+echo "-- Installo i campi usati dalle entità Node ----------------------------"
+composer require municipes/fundamentum --no-cache
+drush -y pm:install fundamentum
 
 # echo "-- Installo il tipo di contenuto Persona -------------------------------"
 # composer require municipes/prosopon --no-cache
