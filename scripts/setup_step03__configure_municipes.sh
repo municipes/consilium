@@ -3,13 +3,13 @@
 # This script performs the initial configuration of Municipes.
 # Run this script in the location where your composer.json is.
 
-echo "-- Installo i vocabolari -----------------------------------------------"
-composer require municipes/lexicum --no-cache
-drush -y en lexicum
-
 echo "-- Installo i tipi di Media gestiti ------------------------------------"
 composer require municipes/bibliotheca --no-cache
 drush -y pm:install bibliotheca
+
+echo "-- Installo i vocabolari -----------------------------------------------"
+composer require municipes/lexicum --no-cache
+drush -y en lexicum
 
 echo "-- Importo le voci di tassonomia ---------------------------------------"
 composer require municipes/lexicum_collatio --no-cache
