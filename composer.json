@@ -30,14 +30,14 @@
     {
       "type": "package",
       "package": {
-        "name": "municipes/facies-dist",
+        "name": "municipes/scaenographia-dist",
         "version": "1.0.41",
         "type": "drupal-library",
         "extra": {
-          "installer-name": "municipes-facies"
+          "installer-name": "municipes-scaenographia"
         },
         "dist": {
-          "url": "https://github.com/municipes/facies/releases/download/1.0.41/facies.zip",
+          "url": "https://github.com/municipes/scaenographia/releases/download/1.0.41/scaenographia.zip",
           "type": "zip"
         }
       }
