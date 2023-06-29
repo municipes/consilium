@@ -7,14 +7,14 @@ echo "-- Installo i vocabolari -----------------------------------------------"
 composer require municipes/lexicum --no-cache
 drush -y en lexicum
 
+echo "-- Installo i tipi di Media gestiti ------------------------------------"
+composer require municipes/bibliotheca --no-cache
+drush -y pm:install bibliotheca
+
 echo "-- Importo le voci di tassonomia ---------------------------------------"
 composer require municipes/lexicum_collatio --no-cache
 drush -y en lexicum_collatio
 drush migrate:import --all
-
-echo "-- Installo i tipi di Media gestiti ------------------------------------"
-composer require municipes/bibliotheca --no-cache
-drush -y pm:install bibliotheca
 
 echo "-- Installo i campi usati dalle entità Node ----------------------------"
 composer require municipes/fundamentum --no-cache
