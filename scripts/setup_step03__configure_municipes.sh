@@ -24,9 +24,9 @@ echo "-- Installo il tipo di contenuto Persona -------------------------------"
 composer require municipes/persona --no-cache
 drush -y pm:install persona
 
-# echo "-- Installo il tipo di contenuto Punto di contatto----------------------"
-# composer require municipes/domicilium --no-cache
-# drush -y pm:install domicilium
+echo "-- Installo il tipo di contenuto Unità organizzativa -------------------"
+composer require municipes/officium --no-cache
+drush -y pm:install officium
 
 # echo "-- Installo il tipo di contenuto Luogo ---------------------------------"
 # composer require municipes/topographia --no-cache
