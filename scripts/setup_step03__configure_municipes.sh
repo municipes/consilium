@@ -36,6 +36,10 @@ echo "-- Installo il tipo di contenuto Luogo ---------------------------------"
 composer require municipes/sedes --no-cache
 drush -y pm:install sedes
 
+echo "-- Installo il tipo di contenuto Dataset -------------------------------"
+composer require municipes/elementum --no-cache
+drush -y pm:install elementum
+
 # echo "-- Importo i ruoli dell'entity 'User' ----------------------------------"
 # composer require municipes/sunchronizo_prosopon --no-cache
 # drush -y pm:install sunchronizo_prosopon
