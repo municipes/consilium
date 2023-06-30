@@ -41,9 +41,10 @@ drush -y pm:install address auto_entitylabel entity_reference_revisions geofield
 
 echo "-- Installo il tema ----------------------------------------------------"
 drush -y pm:enable components
-drush -y theme:enable bootstrap_italia scaenographia
 drush -y pm:enable menu_block
+drush -y theme:enable bootstrap_italia scaenographia
 drush -y config:set system.theme default scaenographia
+drush -y pm:enable bootstrap_italia_empty_front_page
 
 drush -y pm:enable bootstrap_italia_image_style \
  bootstrap_italia_paragraph bootstrap_italia_paragraph_accordion \
