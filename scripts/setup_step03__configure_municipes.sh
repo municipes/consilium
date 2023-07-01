@@ -52,6 +52,10 @@ echo "-- Installo il tipo di contenuto Notizia -------------------------------"
 composer require municipes/nuntius --no-cache
 drush -y pm:install nuntius
 
+echo "-- Installo il tipo di contenuto Sito tematico -------------------------"
+composer require municipes/thematis --no-cache
+drush -y pm:install thematis
+
 echo "-- Installo il tipo di contenuto Pagina --------------------------------"
 composer require municipes/pagina --no-cache
 drush -y pm:install pagina
