@@ -56,6 +56,10 @@ echo "-- Installo il tipo di contenuto Sito tematico -------------------------"
 composer require municipes/thematis --no-cache
 drush -y pm:install thematis
 
+echo "-- Installo il tipo di contenuto Servizio -------------------------------"
+composer require municipes/opera --no-cache
+drush -y pm:install opera
+
 echo "-- Installo il tipo di contenuto Pagina --------------------------------"
 composer require municipes/pagina --no-cache
 drush -y pm:install pagina
