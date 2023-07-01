@@ -40,6 +40,18 @@ echo "-- Installo il tipo di contenuto Dataset -------------------------------"
 composer require municipes/elementum --no-cache
 drush -y pm:install elementum
 
+echo "-- Installo il tipo di contenuto Evento --------------------------------"
+composer require municipes/eventum --no-cache
+drush -y pm:install eventum
+
+echo "-- Installo il tipo di contenuto Documento pubblico --------------------"
+composer require municipes/documentum --no-cache
+drush -y pm:install documentum
+
+echo "-- Installo il tipo di contenuto Notizia -------------------------------"
+composer require municipes/nuntius --no-cache
+drush -y pm:install nuntius
+
 # echo "-- Importo i ruoli dell'entity 'User' ----------------------------------"
 # composer require municipes/sunchronizo_prosopon --no-cache
 # drush -y pm:install sunchronizo_prosopon
