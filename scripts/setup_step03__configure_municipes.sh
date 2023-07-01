@@ -20,6 +20,10 @@ echo "-- Installo i campi usati dalle entità Node ----------------------------"
 composer require municipes/fundamentum --no-cache
 drush -y pm:install fundamentum
 
+echo "-- Installo il tipo di contenuto Pagina --------------------------------"
+composer require municipes/pagina --no-cache
+drush -y pm:install pagina
+
 echo "-- Installo il tipo di contenuto Persona -------------------------------"
 composer require municipes/persona --no-cache
 drush -y pm:install persona
