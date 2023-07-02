@@ -64,7 +64,10 @@ echo "-- Installo il tipo di contenuto Pagina --------------------------------"
 composer require municipes/pagina --no-cache
 drush -y pm:install pagina
 
-# echo "-- Importo i ruoli dell'entity 'User' ----------------------------------"
-# composer require municipes/sunchronizo_prosopon --no-cache
-# drush -y pm:install sunchronizo_prosopon
-# drush migrate:import scuola_roles
+echo "-- Installo il tipo di contenuto FAQ -----------------------------------"
+composer require municipes/quaestio --no-cache
+drush -y pm:install quaestio
+
+echo "-- Importo le viste ----------------------------------------------------"
+composer require municipes/prospectus --no-cache
+drush -y pm:install prospectus
