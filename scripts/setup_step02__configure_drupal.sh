@@ -36,8 +36,10 @@ drush -y pm:install big_pipe datetime file field image inline_form_errors \
   media media_library node options responsive_image taxonomy telephone \
   text views
 
+drush -y pm:install ckeditor5 editor bootstrap_italia_text_editor2
+
 drush -y pm:install address auto_entitylabel entity_reference_revisions geofield imce \
-  field_group focal_point leaflet paragraphs
+  field_group focal_point leaflet paragraphs taxonomy_menu
 
 echo "-- Installo il tema ----------------------------------------------------"
 drush -y pm:enable components
@@ -56,5 +58,6 @@ drush -y pm:enable bootstrap_italia_image_style \
 
 drush -y pm:enable bootstrap_italia_views_accordion \
   bootstrap_italia_views_carousel bootstrap_italia_views_gallery \
-  bootstrap_italia_views_list bootstrap_italia_views_timeline
+  bootstrap_italia_views_list bootstrap_italia_views_timeline \
+  bi_taxonomy_custom_controller bi_toc twig_tweak bi_calendar
 
