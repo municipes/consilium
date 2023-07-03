@@ -88,6 +88,7 @@ echo "-- Importo i blocchi ---------------------------------------------------"
 composer require municipes/theca --no-cache
 drush -y pm:install theca
 
+drush migrate:import paragraph_common
 drush migrate:import block_common
 
 echo "-- Scarico il tipo di contenuto Appuntamento ---------------------------"
