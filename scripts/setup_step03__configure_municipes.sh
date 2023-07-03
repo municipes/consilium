@@ -90,5 +90,17 @@ drush -y pm:install theca
 
 drush migrate:import block_common
 
+echo "-- Scarico il tipo di contenuto Appuntamento ---------------------------"
+composer require municipes/constitutum --no-cache
+
+echo "-- Scarico il tipo di contenuto Documento privato ----------------------"
+composer require municipes/privatum_documentum --no-cache
+
 echo "-- Scarico il tipo di contenuto Messaggio ------------------------------"
 composer require municipes/nuntium --no-cache
+
+echo "-- Scarico il tipo di contenuto Pagamento ------------------------------"
+composer require municipes/pensio --no-cache
+
+echo "-- Scarico il tipo di contenuto Pratica --------------------------------"
+composer require municipes/libellus --no-cache
