@@ -82,3 +82,9 @@ drush -y pm:install navigatio
 
 drush migrate:import node_common
 drush migrate:import menu_common
+
+echo "-- Importo i blocchi ---------------------------------------------------"
+composer require municipes/theca --no-cache
+drush -y pm:install theca
+
+drush migrate:import block_common
