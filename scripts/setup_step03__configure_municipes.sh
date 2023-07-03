@@ -68,6 +68,17 @@ echo "-- Installo il tipo di contenuto FAQ -----------------------------------"
 composer require municipes/quaestio --no-cache
 drush -y pm:install quaestio
 
+echo "-- Importo le impostazioni di ricerca ----------------------------------"
+composer require municipes/investigatio --no-cache
+drush -y pm:install investigatio
+
 echo "-- Importo le viste ----------------------------------------------------"
 composer require municipes/prospectus --no-cache
 drush -y pm:install prospectus
+
+echo "-- Importo i menu ------------------------------------------------------"
+composer require municipes/navigatio --no-cache
+drush -y pm:install navigatio
+
+drush migrate:import node_common
+drush migrate:import menu_common
