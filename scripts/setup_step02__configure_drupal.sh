@@ -34,7 +34,7 @@ drush -y config:set pathauto.settings punctuation.slash 1
 
 drush -y pm:install big_pipe datetime file field image inline_form_errors \
   media media_library node options responsive_image taxonomy telephone \
-  text views
+  text views block_content
 
 drush -y pm:install ckeditor5 editor bootstrap_italia_text_editor2
 
