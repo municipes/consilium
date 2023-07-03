@@ -33,6 +33,7 @@ composer require municipes/mandatum --no-cache
 drush -y pm:install mandatum
 
 echo "-- Installo il tipo di contenuto Luogo ---------------------------------"
+composer require -n "geocoder-php/nominatim-provider:^5.7"
 composer require municipes/sedes --no-cache
 drush -y pm:install sedes
 
