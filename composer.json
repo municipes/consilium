@@ -119,7 +119,7 @@
     "recurser/jquery-simple-color": "*"
   },
   "require-dev": {
-    "drupal/core-dev": "^10.1"
+    "drupal/core-dev": "9.5"
   },
   "conflict": {
     "drupal/drupal": "*"

@@ -23,7 +23,7 @@ notificationDisplayLevelDanger=1
 notificationDisplayLevelDebugLiv1=0
 notificationDisplayLevelDebugLiv2=0
 notificationDisplayLevelDebugLiv3=0
-municipesCodebaseInstallVersion="9.5"
+municipesCodebaseInstallVersion="0.95"
 
 # La cartella base dove si trova questo script
 if [[ -L "${BASH_SOURCE[0]}" ]]; then
