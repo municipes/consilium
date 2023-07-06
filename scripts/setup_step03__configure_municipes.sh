@@ -4,7 +4,7 @@
 # Run this script in the location where your composer.json is.
 
 echo "-- Installo i tipi di Media gestiti ------------------------------------"
-composer require municipes/bibliotheca --no-cache
+composer require municipes/bibliotheca:9.5 --no-cache
 drush -y pm:install bibliotheca
 
 echo "-- Installo i vocabolari -----------------------------------------------"
@@ -17,7 +17,7 @@ drush -y en lexicum_collatio
 drush migrate:import --all
 
 echo "-- Installo i campi usati dalle entità Node ----------------------------"
-composer require municipes/fundamentum --no-cache
+composer require municipes/fundamentum:9.5 --no-cache
 drush -y pm:install fundamentum
 
 echo "-- Installo il tipo di contenuto Persona -------------------------------"
