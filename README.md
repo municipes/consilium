@@ -7,10 +7,10 @@
 [Consilĭum] è un modello che installa la distribuzione Drupal Municipes
 
 ## Installazione
-Per installare il CMS Municipes procedi così
+Per installare il CMS Municipes versione 9.5 procedi così
 1) Installa il codice:
 ```shell
-$ composer create municipes/consilium project-name --no-install
+$ composer create municipes/consilium:9.5 project-name --no-install
 $ cd project-name
 $ composer require drush/drush --no-install
 $ composer install
@@ -20,7 +20,7 @@ $ composer install
 
 Se usi ddev puoi installare tutto con un unico comando, esegui [ddev_installer](scripts/municipes_ddev_installer.sh)
 ```shell
-bash <(curl -s -H "Cache-Control: no-cache" "https://raw.githubusercontent.com/municipes/consilium/10.x/scripts/municipes_ddev_installer.sh")
+bash <(curl -s -H "Cache-Control: no-cache" "https://raw.githubusercontent.com/municipes/consilium/9.5/scripts/municipes_ddev_installer.sh")
 ```
 
 ## License
