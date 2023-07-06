@@ -23,7 +23,7 @@ notificationDisplayLevelDanger=1
 notificationDisplayLevelDebugLiv1=0
 notificationDisplayLevelDebugLiv2=0
 notificationDisplayLevelDebugLiv3=0
-municipesCodebaseInstallVersion="^10.x-dev"
+municipesCodebaseInstallVersion="9.5"
 
 # La cartella base dove si trova questo script
 if [[ -L "${BASH_SOURCE[0]}" ]]; then
@@ -196,7 +196,7 @@ done
 echo " "
 n "Configuro ddev" notice
 echo "-----------------------"
-ddev config --project-type=drupal10 --docroot=web --create-docroot
+ddev config --project-type=drupal9 --docroot=web --create-docroot
 
 echo " "
 n "Avvio i container" notice
