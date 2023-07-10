@@ -94,7 +94,6 @@
     "drupal/facets": "^2.0",
     "drupal/field_group": "^3.4",
     "drupal/focal_point": "^2.0",
-    "drupal/geocoder": "^4.9",
     "drupal/geofield": "^1.53",
     "drupal/imce": "^3.0",
     "drupal/inline_entity_form": "^1.0@RC",
