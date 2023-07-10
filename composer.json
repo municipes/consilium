@@ -101,6 +101,7 @@
     "drupal/install_profile_generator": "^4.0@alpha",
     "drupal/leaflet": "^10.0",
     "drupal/menu_block": "^1.10",
+    "drupal/metatag": "^2.0",
     "drupal/node_read_time": "^1.11",
     "drupal/paragraphs": "^1.15",
     "drupal/pathauto": "^1.11",
